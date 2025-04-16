@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Robot font link from google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome link from CDN js-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+
+    <style>
+      /* Reset */
+      * {
+        padding: 0%;
+        margin: 0%;
+        /* width include all (pading, margin...) */
+        box-sizing: border-box;
+      }
+
+      .subtitle {
+        background-color: coral;
+        max-width: 300px;
+
+        position: static; /* default */
+        position: relative; /*par rapport à lui meme*/
+        /* left: 50px;
+        top: 50px;
+        right: 100px;
+        bottom: 50px; */
+      }
+
+      /**************************************/
+
+      body {
+        /* Robot font linkfrom google font  */
+        font-family: "Roboto", sans-serif;
+      }
+
+      .content {
+        padding: 10px;
+        border: 3px solid blue;
+        max-width: 450px;
+        /* 1st step to position cancel icone */
+        position: relative;
+        /* shadow */
+        /* horizontal vertical  shadowIntensity(0=solid)*/
+        /* https://getcssscan.com/css-box-shadow-examples ->to get free beautifull shadow*/
+        box-shadow: 10px 10px 10px 15px darkblue;
+
+        /* box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45); */
+
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .content .photo {
+        width: 100%;
+        /* to correct image quality automaticly*/
+        object-fit: cover;
+      }
+
+      .test {
+        background-color: orange;
+        /* width: 400px;  /*width fix */
+        max-width: 300px;
+      }
+      .desc h2 {
+        /* padding: 20px; */
+        color: #333;
+        margin-bottom: 8px;
+      }
+      i {
+        cursor: pointer;
+      }
+      .desc p {
+        font-size: 10px;
+        color: #333;
+      }
+      /* 2nd step to position close icone */
+      .faclose {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* top: 50%;
+        right: 50%; */
+
+        /* icones treeted like text */
+        font-size: 30px;
+      }
+      .icones {
+        /* border: 10px solid blue; */
+        max-width: 100px;
+        margin: 10px auto;
+      }
+
+      .icones i {
+        margin-right: 10px;
+        font-size: 15px;
+      }
+
+      .fa-rocket {
+        color: purple;
+      }
+      .fa-camera {
+        color: greenyellow;
+      }
+      .fa-car-side {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2 class="subtitle">My Subtitle</h2>
+
+    <h2 class="test">My work station</h2> -->
+
+    <div class="content">
+      <img class="photo" src="images/photo.JPG" alt="my photo" />
+      <div class="desc">
+        <h2>My work station</h2>
+        <h2>Price: 200$</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          labore asperiores minima nemo repellat.
+        </p>
+      </div>
+      <!-- icones from fontawesome.com -->
+      <!-- <i class="fa-brands fa-facebook"></i> -->
+      <div class="icones">
+        <i class="fa-solid fa-rocket"></i>
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-car-side"></i>
+      </div>
+      <i class="fa-solid fa-rectangle-xmark faclose"></i>
+    </div>
+  </body>
+</html>
