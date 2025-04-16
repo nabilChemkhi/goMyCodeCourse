@@ -1,35 +1,41 @@
 ﻿# 💻 Workshops Repository List
 
-Bienvenue dans cette collection de projets réalisés dans le cadre de ma formation chez GoMyCode. Chaque projet correspond à un atelier (workshop) pratique couvrant différentes technologies.
+Welcome to this collection of projects created during my training at GoMyCode. Each project corresponds to a hands-on workshop covering different technologies.
 
 ---
 
 ## 🧰 1. Workshop Git – Checkpoint
 
-📌 **Sujet :** Prise en main de Git (init, commit, push, etc.)  
-🔗 **Dépôt GitHub :** [checkpoint.git](https://github.com/nabilChemkhi/checkpoint.git)
+📌 **Topic:** Introduction to Git (init, commit, push, etc.)  
+🔗 **GitHub Repository:** [checkpoint.git](https://github.com/nabilChemkhi/checkpoint.git)
 
 ---
 
 ## 🌐 2. Workshop HTML – Delicious Bites Menu
 
-🍽️ **Sujet :** Création d’un menu de restaurant en HTML  
-🔗 **Dépôt GitHub :** [DeliciousBitesMenu.git](https://github.com/nabilChemkhi/DeliciousBitesMenu.git)
+🍽️ **Topic:** Building a restaurant menu using HTML  
+🔗 **GitHub Repository:** [DeliciousBitesMenu.git](https://github.com/nabilChemkhi/DeliciousBitesMenu.git)
 
 ---
 
 ## 🧑‍💼 3. Workshop HTML – Portfolio Page
 
-💼 **Sujet :** Réalisation d'une page portfolio personnelle en HTML  
-🔗 **Dépôt GitHub :** [Portfolio-Page.git](https://github.com/nabilChemkhi/Portfolio-Page.git)
+💼 **Topic:** Creating a personal portfolio page using HTML  
+🔗 **GitHub Repository:** [Portfolio-Page.git](https://github.com/nabilChemkhi/Portfolio-Page.git)
 
 ---
 
-📌 *Chaque projet est réalisé à des fins pédagogiques et témoigne de ma progression en développement web.*
+## 🎨 4. Workshop CSS – Portfolio Styling
 
-N’hésite pas à explorer les dépôts pour voir le code source et les résultats de chaque atelier.
+🎨 **Topic:** Styling the portfolio page with CSS  
+🔗 **GitHub Repository:** [cssProject.git](https://github.com/nabilChemkhi/cssProject.git)
 
 ---
 
-👨‍💻 *Créé avec passion par [Nabil Chemkhi](https://github.com/nabilChemkhi)*
+📌 *Each project is created for learning purposes and reflects my progress in web development.*
 
+Feel free to explore the repositories to check out the source code and results of each workshop.
+
+---
+
+👨‍💻 *Created with passion by [Nabil Chemkhi](https://github.com/nabilChemkhi)*
