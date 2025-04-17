@@ -1,0 +1,169 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid black; */
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.navbar li{
+    flex-grow: 1;
+    /* border: 1px saddlebrown; */
+}
+
+.navbar li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: goldenrod;
+    transition: all 0.4s linear;
+}
+
+.navbar li a:hover{
+    background-color: goldenrod;
+    color: #333;
+    
+}
+
+/* netflix exmpl */
+.netflix{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    border: 1px solid lightgreen;
+    background-color: lightblue;
+    padding: 40px;
+}
+.item ul{
+    list-style: none;
+}
+.item li{
+    margin-bottom: 5px;
+}
+
+.container{
+    border: 2px solid lightgray;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    /* display the content along the main axies default value START  */
+    justify-content: start;
+    justify-content: center;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 200px;
+
+    /* align items only cors axies default vertical axes */
+    align-items: start;
+    align-items: center;
+    align-items: end;
+}
+.box{
+    background-color: coral;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.content{
+    border: 2px solid blue;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content:center
+}
+
+.box1{
+    background-color: coral;
+    border: 1px solid black;
+    /* padding: 15px; */
+    text-align: center;
+    height:100%;
+}
+
+.content :nth-child(2){
+    /* default value 0 */
+flex-grow: 1;
+}
+.content :nth-child(1){
+    /* default value 0 */
+flex-grow: 2;
+}
+
+/* ************exercice**************** */
+.containerEx1{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.containerEx2{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containerEx{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containerEx3{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.containerEx4{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.containerEx5{
+    border: 2px solid lightgreen;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: end;
+    
+}
