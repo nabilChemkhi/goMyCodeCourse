@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* position: relative; */
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    background-color: coral;
+    justify-content: space-evenly;
+
+    transition: all 0.4s linear;
+
+    width: 100%;        
+  flex-wrap: wrap;    
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  
+
+
+}
+
+.navbar a{
+    display: block;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: coral;
+}
+
+.photo{
+    
+    display: flex;
+    justify-content: space-around;
+    /* centrer les images verticalement */
+    align-items: center;
+
+    /* flex: 1; */
+    flex-grow: 1;
+}
+
+.footer{
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s linear;
+    margin-bottom: 0%;
+    /* position: absolute; */
+    position: static;
+}
+
+
+.leftFooter, .rightFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a:hover{
+    color: #000000;
+}
+
+
+/* Le container principal est en flex vertical */
+.container {
+    display: flex;
+    /* inverser les colones de flexbox */
+    flex-direction: column;
+    /* Hauteur totale de la vue */
+    min-height: 100vh; 
+  }
