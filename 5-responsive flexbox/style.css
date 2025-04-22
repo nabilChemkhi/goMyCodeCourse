@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    
+    /* padding: 20px; */
+    
+
+}
+
+
+
+.contentItem{
+    display: flex;
+    /* replace the margin right */
+    gap: 30px;
+/*widn initial equivalant à width */
+    flex-basis: 32%;
+    
+}
+
+/* .contentItem i{
+    margin-right: 10px;
+
+} */
+
+.mainCard{
+    display: flex;
+    border:  1px solid lightgray;
+    padding: 20px;
+    
+}
+
+.cardTitle{
+   text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    border:  1px solid lightgray;
+    border-radius: 10px;
+}
+
+.contentItem > p{
+    color: brown;
+    font-size: small;
+    font-family: monospace;
+}
