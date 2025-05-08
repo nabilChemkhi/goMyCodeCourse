@@ -108,13 +108,10 @@ console.log(num1<=num2); //true
 //and
 console.log(num1>10 && num2>20); //false
 //or
+//returns true if either of the conditions is true
 console.log(num1>10 || num2>20); //true
 //not
+//returns true if the condition is false
+//returns false if the condition is true
 console.log(!(num1>10)); //true
-//bitwise operators
-//and
-console.log(num1&num2); //0
-//or
-console.log(num1|num2); //31
-//xor
-console.log(num1^num2); //31
+
