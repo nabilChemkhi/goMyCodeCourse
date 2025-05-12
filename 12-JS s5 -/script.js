@@ -146,3 +146,38 @@ else if(color==="green"){
 else{
     console.log("Color is not red, blue or green");
 }
+
+
+//exercise fizzbuzz
+// Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+function fizzBuzz(n)   {
+    
+    if (typeof n !== 'number') {
+        console.log("Please enter a number.");
+        return;
+    }
+
+        if (n % 3 === 0 && n % 5 === 0) {
+            console.log("FizzBuzz");
+            return "FizzBuzz";
+        } else if (n % 3 === 0) {
+            console.log("Fizz");
+            return "Fizz";
+        } else if (n % 5 === 0) {
+            console.log("Buzz");
+            return "Buzz";
+        } else {
+            console.log(n);
+            return n;
+        }
+   
+}
+
+console.log(fizzBuzz(15)) // FizzBuzz
+fizzBuzz(3); // Fizz
+fizzBuzz(5); // Buzz
+fizzBuzz(7); // 7
+fizzBuzz(15); // FizzBuzz
+fizzBuzz('abc'); // Please enter a number.
+fizzBuzz('15'); // Please enter a number.
