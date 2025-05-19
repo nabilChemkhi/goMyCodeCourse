@@ -100,3 +100,35 @@ consolelog(indexOf(numbers,100));// // -1
 
 
 
+const courses=[
+    {id:1,title:'JS'},
+    {id:2,title:'HTML'},
+    {id:3,title:'CSS'}, 
+    {id:4,title:'React'},
+    {id:5,title:'Node'},
+];
+
+courses.indexOf({id:1,title:'JS'});// // -1
+// // because the object is a reference type
+// // to find the index of an object in an array, we need to use the findIndex method
+courses.findIndex(course=>course.id===1);// // 0
+
+courses.find(function(course){
+    return course.id===1;
+});// // {id:1,title:'JS'}
+// // find method returns the first element that satisfies the condition
+
+
+courses.find(course=>course.title==='JS');// // {id:1,title:'JS'}
+// // find method returns the first element that satisfies the condition
+
+numbers.find(function(number){
+    return number===25;
+}   );// // 25
+
+
+//filtre method
+const filteredCourses=courses.filter(function(course){
+    return course.title.includes('JS');
+});// // [{id:1,title:'JS'}]    
+// // filter method returns an array of elements that satisfy the conditionq
