@@ -24,11 +24,11 @@ const App = () => {
     <div>
 
       
-    <Button onBtnClick={handleClick} backgroundColor="blue" color="red">
+    <Button onBtnClick={handleClick} backgroundColor="blue" color="white">
       Click Me
     </Button>
 
-    <Button onBtnClick={handleSubmit} backgroundColor="green" color="green">
+    <Button onBtnClick={handleSubmit} backgroundColor="green" color="whte">
       Submit
     </Button>
     
