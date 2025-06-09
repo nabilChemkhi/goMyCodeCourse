@@ -1,24 +1,18 @@
-import React from 'react'
-import Message from './components/Message'
-
+import React from 'react';
+import Counter from './components/Counter';
 
 const App = () => {
-
-
-
   return (
-   
-    <div>
+    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
+    <h1 className='text-center'>React App</h1>
 
-    <h1>My App</h1>
-
-    <Message color="blue">
-      <h2>Title</h2>
-      This is my first message with children
-    </Message>
     
+    <div>
+      <Counter />
     </div>
-  )
-}
 
-export default App
+    </div>
+  );
+};
+
+export default App;
