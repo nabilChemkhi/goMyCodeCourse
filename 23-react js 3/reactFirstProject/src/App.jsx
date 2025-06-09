@@ -1,37 +1,16 @@
 import React from 'react'
-import Message from './components/Message'
-import Button from './components/Button'
 
 const App = () => {
 
- const handleClick = () => {
-    console.log("Button clicked!");
-  }
-  const handleSubmit = () => {
-    console.log("Submit clicked!");
-  }
+  const name = 'John Doe'
+  const add = (a,b) =>{return a+b}
+  
 
   return (
-    // <div>
-      
-    //   {/* <Message  color="red" text="this is my message props"/> */}
-    //   <Message color="blue" >
-    //   <h2>Title</h2>
-    //   This is my first message with children
-    //   </Message>
-  
-    // </div>
     <div>
-
+      <h1>Hello {name} </h1>
+      {add(1,2)}
       
-    <Button onBtnClick={handleClick} backgroundColor="blue" color="white">
-      Click Me
-    </Button>
-
-    <Button onBtnClick={handleSubmit} backgroundColor="green" color="whte">
-      Submit
-    </Button>
-    
     </div>
   )
 }
