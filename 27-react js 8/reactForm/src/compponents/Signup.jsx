@@ -4,6 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useForm } from "react-hook-form";
 
 const Signup = () => {
+const { register, handleSubmit, formState: { errors } } = useForm();
+// State variables to hold form data    
+
+
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
@@ -20,7 +24,7 @@ const handlePasswordChange = (e) => {
   setPassword(e.target.value);
 };
 
-const handleSubmit = (e) => {
+const handleSubmit1 = (e) => {
     const formData = {
         name: name,
         email: email,
@@ -49,6 +53,7 @@ const handleSubmit = (e) => {
             placeholder="Entrez votre nom" 
             required 
           />
+
         </div>
 
         <div className="mb-3">
