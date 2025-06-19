@@ -1,0 +1,87 @@
+.ai-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #181c23 60%, #23272f 100%);
+  padding: 1rem 2.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  margin-bottom: 2.5rem;
+  animation: navbarFadeIn 1.2s;
+}
+
+@keyframes navbarFadeIn {
+  from { opacity: 0; transform: translateY(-30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.ai-navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.ai-navbar-logo-icon {
+  font-size: 2.2rem;
+  color: #61dafb;
+  animation: bounce 1.2s infinite alternate;
+}
+
+.ai-navbar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-shadow: 0 2px 8px #2228;
+}
+
+.ai-navbar-rocket {
+  font-size: 1.5rem;
+  color: #ffb347;
+  margin-left: 0.5rem;
+  animation: rocketMove 1.5s infinite alternate;
+}
+
+@keyframes rocketMove {
+  to { transform: translateY(-7px) rotate(-8deg);}
+}
+
+.ai-navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ai-navbar-links li {
+  transition: transform 0.15s;
+}
+
+.ai-navbar-links li.active,
+.ai-navbar-links li:hover {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.ai-navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 0.8rem;
+  transition: background 0.2s, color 0.2s;
+  background: rgba(97,218,251,0.08);
+}
+
+.ai-navbar-links li.active a,
+.ai-navbar-links a:hover {
+  background: #61dafb;
+  color: #181c23;
+  box-shadow: 0 2px 12px #61dafb44;
+}

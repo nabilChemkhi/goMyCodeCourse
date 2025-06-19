@@ -6,14 +6,23 @@ import {Routes, Route} from 'react-router-dom';
 import NotFount from './pages/NotFount';
 
 
+import NavBar from './pages/NavBar';
+
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFount />} />
-    </Routes>
+    <>
+   <div>
+    <NavBar />
+      <Routes>
+      
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFount />} />
+      </Routes>
+   </div>
+    
+    </>
   );
 }
 
