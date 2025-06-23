@@ -3,16 +3,27 @@ import Post from './post' // Assure-toi que le chemin est correct
 
 const PostList = (props) => {
   return (
-    <div>
+    // <div>
         
-        <ul>
-            {props.posts.map(post => (
-            <li key={post.id}>
-                <Post post={post} />
-            </li>
-            ))}
-        </ul>
-    </div>
+    //     <ul>
+    //         {props.posts.map(post => (
+    //         <li key={post.id}>
+    //             <Post post={post} />
+    //         </li>
+    //         ))}
+    //     </ul>
+    // </div>
+
+    <div>
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    {props.posts.map(post => (
+      <li key={post.id} style={{ marginBottom: '20px' }}>
+        <Post post={post} />
+      </li>
+    ))}
+  </ul>
+</div>
+
   )
 }
 
