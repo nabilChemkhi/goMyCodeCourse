@@ -15,7 +15,7 @@ const PostList = (props) => {
     // </div>
 
     <div>
-  <ul style={{ listStyleType: 'none', padding: 0 }}>
+  <ul style={{ listStyleType: 'none', padding: 0 , display: 'flex',  gap: '20px', flexWrap: 'wrap' }}>
     {props.posts.map(post => (
       <li key={post.id} style={{ marginBottom: '20px' }}>
         <Post post={post} />
