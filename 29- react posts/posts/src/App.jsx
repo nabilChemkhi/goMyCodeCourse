@@ -31,11 +31,25 @@ const App = () => {
       .then(response => {
         console.log("Post created successfully:", response.data);
         // Optionally, you can fetch the updated posts list after creating a new post
-        fetchPosts();
+fetchPosts();
       })
       .catch(error => {
         console.error("Error creating post:", error);
-      });
+      }); 
+
+//update UI posts
+    setPosts([...posts, newPost]);
+
+    // //post request to the server
+    // httpClient.post('/posts', newPost)
+    //   .then(response => {
+    //     console.log("Post created successfully:", response.data);
+    //     // Optionally, you can fetch the updated posts list after creating a new post
+    //     fetchPosts();
+    //   })
+    //   .catch(error => {
+    //     console.error("Error creating post:", error);
+    //   });
   };
 
   const fetchPosts = () => {
