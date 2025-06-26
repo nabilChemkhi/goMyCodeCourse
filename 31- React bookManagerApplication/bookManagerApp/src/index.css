@@ -1,0 +1,156 @@
+/* ...existing code... */
+
+.app-main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
+  position: relative;
+  padding-top: 2rem;
+  animation: bg-fade-in 1.2s ease;
+}
+
+@keyframes bg-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.app-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4338ca;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  animation: header-pop 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes header-pop {
+  0% { transform: scale(0.7) rotate(-8deg); opacity: 0; }
+  60% { transform: scale(1.1) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg);}
+}
+
+.app-header .emoji {
+  font-size: 2.2rem;
+  animation: emoji-wave 2.5s infinite;
+  display: inline-block;
+}
+
+@keyframes emoji-wave {
+  0%, 100% { transform: rotate(0deg);}
+  10% { transform: rotate(-18deg);}
+  20% { transform: rotate(16deg);}
+  30% { transform: rotate(-12deg);}
+  40% { transform: rotate(8deg);}
+  50% { transform: rotate(0deg);}
+}
+
+.book-form-container {
+  background: linear-gradient(135deg, #f0f4ff 60%, #e0e7ff 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 24px 0 rgba(80, 80, 200, 0.12);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-form-container::before {
+  content: "📚✨";
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  animation: emoji-bounce 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes emoji-bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
+}
+
+.book-form-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4f46e5;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.book-form-title::after {
+  content: "📝";
+  animation: emoji-spin 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes emoji-spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.book-form-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #3730a3;
+  font-weight: 600;
+}
+
+.book-form-form input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #a5b4fc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.book-form-form input:focus {
+  border-color: #6366f1;
+  outline: none;
+  background: #eef2ff;
+}
+
+.book-form-form button {
+  background: linear-gradient(90deg, #6366f1 60%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.15);
+  position: relative;
+}
+
+.book-form-form button::after {
+  content: " ➕";
+  font-size: 1.2rem;
+  animation: emoji-bounce 1.5s infinite;
+}
+
+.book-form-form button:hover {
+  background: linear-gradient(90deg, #818cf8 60%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    font-size: 1.5rem;
+  }
+  .app-main-container {
+    padding-top: 1rem;
+  }
+}
