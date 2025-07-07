@@ -10,6 +10,10 @@ const App = () => {
   };
 
   const handleAdd = () => {
+    if (!todoText.trim()) {
+      alert("Please enter a todo item.");
+      return;
+    } 
     const newTodos = {
       id: todos.length + 1,
       content: todoText,

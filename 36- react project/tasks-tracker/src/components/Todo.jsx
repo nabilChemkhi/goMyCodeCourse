@@ -1,4 +1,4 @@
-import { TbTrashXFilled } from "react-icons/tb";
+  import { TbTrashXFilled } from "react-icons/tb";
 import { useState } from "react";
 
 const Todo = ({ todo, deleteTodo }) => {
