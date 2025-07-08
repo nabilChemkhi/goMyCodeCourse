@@ -106,3 +106,32 @@ div > div > div svg:hover {
   text-decoration-color: red;
   text-decoration-thickness: 3px;
 }
+
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f3f4f6;
+  color: #333;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+select:focus {
+  border: 1.5px solid #7c3aed;
+}
+
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+.todo-item.completed p {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
